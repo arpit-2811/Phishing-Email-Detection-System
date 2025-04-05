@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeInbox - Features</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            backdrop-filter: blur(10px);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #00ffff;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #00ffff;
+        }
+
+        .menu-toggle {
+            font-size: 24px;
+            cursor: pointer;
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                width: 100%;
+                background: rgba(0, 0, 0, 0.9);
+                backdrop-filter: blur(10px);
+                top: 60px;
+                left: 0;
+                padding: 10px 0;
+                text-align: center;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+        }
+
+        /* Features Section */
+        .features {
+            padding: 60px 20px;
+            text-align: center;
+            background: #111;
+            color: white;
+        }
+
+        .features h1 {
+            font-size: 38px;
+            color: #00ffff;
+            margin-bottom: 20px;
+        }
+
+        .features p {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        .features-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .feature-box {
+            width: 300px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .feature-box:hover {
+            background: rgba(0, 255, 255, 0.2);
+            transform: scale(1.05);
+        }
+
+        .feature-box h3 {
+            color: #00ffff;
+            margin-bottom: 10px;
+        }
+
+        .feature-box p {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">SafeInbox</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+        </ul>
+        <div class="menu-toggle">&#9776;</div>
+    </nav>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h1>Advanced Features of SafeInbox</h1>
+        <p>Protect your inbox with our state-of-the-art security features.</p>
+        <div class="features-container">
+            <div class="feature-box">
+                <h3>🚀 AI-Powered Detection</h3>
+                <p>Our smart AI scans emails in real-time for phishing threats.</p>
+            </div>
+            <div class="feature-box">
+                <h3>⚡ Instant Email Analysis</h3>
+                <p>Paste an email and get an instant security assessment.</p>
+            </div>
+            <div class="feature-box">
+                <h3>🔒 Secure & Private</h3>
+                <p>Your email data remains confidential and is never stored.</p>
+            </div>
+            <div class="feature-box">
+                <h3>🛡️ Phishing Protection</h3>
+                <p>Detect fraudulent emails and prevent cyber attacks.</p>
+            </div>
+            <div class="feature-box">
+                <h3>📊 Detailed Reports</h3>
+                <p>Get insights into why an email was flagged as suspicious.</p>
+            </div>
+            <div class="feature-box">
+                <h3>🌍 Multi-Platform Access</h3>
+                <p>Use SafeInbox on any device - desktop, tablet, or mobile.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>SafeInbox © 2025 | Your Email Security Partner</p>
+    </footer>
+
+    <script>
+        document.querySelector(".menu-toggle").addEventListener("click", () => {
+            document.querySelector(".nav-links").classList.toggle("active");
+        });
+    </script>
+
+</body>
+</html>
