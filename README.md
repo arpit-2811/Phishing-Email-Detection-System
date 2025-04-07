@@ -1,11 +1,10 @@
 
-# 🛡️ Phishing Attack Simulator & Detection System
+# 🛡️ Phishing Email Detection System
 
 A comprehensive web-based tool to **simulate phishing attacks** and **detect phishing emails using machine learning**. This project aims to raise awareness about phishing threats and provide a real-time detection system for identifying suspicious emails.
 
 ## 🚀 Features
 
-- 🎯 **Phishing Simulation**: Send simulated phishing emails to test user awareness.
 - 🤖 **ML-Powered Detection**: Classifies emails as *phishing* or *legitimate* using a trained machine learning model.
 - 📊 **Dashboard Interface**: View analysis results and detection statistics through an intuitive UI.
 - 🌐 **Responsive Frontend**: Clean, mobile-friendly HTML/CSS interface with multi-page transitions.
@@ -76,6 +75,6 @@ python app.py
 ## ✅ To-Do
 
 - [ ] Add login system for user tracking
-- [ ] Integrate email delivery module for real phishing simulations
+- [ ] Integrate email delivery module 
 - [ ] Improve UI animations and transitions
 - [ ] Extend ML model with NLP enhancements (BERT, etc.)
